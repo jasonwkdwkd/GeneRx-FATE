@@ -1,0 +1,8 @@
+{
+  "gre_log_affinity": -0.25,
+  "promoter_log_bias": -0.18,
+  "splice_logit_shift": -0.65,
+  "fold_log_rate": -0.55,
+  "aggregate_log_rate": 0.30,
+  "function_log_activity": -0.20
+}
