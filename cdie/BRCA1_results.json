@@ -1,0 +1,33 @@
+{
+  "variant_count": 1034,
+  "residue_count": 183,
+  "coordinate_offset": 96,
+  "split": "five contiguous blocks of observed residues",
+  "endpoint": "cisplatin-resistance growth assay score",
+  "input_assay": "homology-directed DNA repair score, available for test variants",
+  "scope": "two assays from the same publication, not clinical risk or DNA-only prediction",
+  "sha256": {
+    "HDR_csv": "a5893b5f98b6f271c6f35097c3dcf8f6e5e6099c8fc0c73bfbee39076cb5fbec",
+    "CR_csv": "7b65093fb1f9f19aaa708cece68c7ee6f4e9df2a3c5413ade420f9e1f9ebff8a",
+    "HDR_metadata": "fcf1c3d0f592e7b45429967015b7aad36a9146a9e8dcaed400f7bbe8fcec92b5",
+    "CR_metadata": "6d795a7752a5525771258670d5bb2a8f4f955c27e6b10b0c53cc0cea2f34e1e4"
+  },
+  "models": {
+    "mean": {
+      "rmse": 0.5671753942281053,
+      "pearson": null
+    },
+    "substitution_only": {
+      "rmse": 0.5449480041123291,
+      "pearson": 0.24685782599710354
+    },
+    "repair_assay_only": {
+      "rmse": 0.3893521720063661,
+      "pearson": 0.7176692469226941
+    },
+    "repair_assay_and_substitution": {
+      "rmse": 0.38856598693368594,
+      "pearson": 0.7188834996314752
+    }
+  }
+}
