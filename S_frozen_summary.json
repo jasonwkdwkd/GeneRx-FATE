@@ -1,0 +1,19 @@
+{
+  "n_permutations": 200,
+  "permutation_seed": 20261110,
+  "n_splits": 20,
+  "n_test_instances": 172,
+  "n_unique_pairs": 92,
+  "r2_b3_vs_add": 0.2722603795352204,
+  "r2_mean_vs_add": 0.2780737647321102,
+  "r2_full_vs_add": 0.3352208328276327,
+  "observed_full_vs_mean": 0.07915915131456142,
+  "null_mean": -0.004263841831541695,
+  "null_std": 0.012067537969716224,
+  "null_q025": -0.029352089226801777,
+  "null_q975": 0.017590135924940714,
+  "n_null_ge_observed": 0,
+  "empirical_one_sided_p": 0.004975124378109453,
+  "null_definition": "training feature-row shuffles; heldout features and targets unchanged",
+  "weighting": "average SSE per unique pair, then pooled SSE ratio"
+}
