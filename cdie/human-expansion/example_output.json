@@ -1,0 +1,105 @@
+{
+  "nuclear_reference": {
+    "NF_Y_CCAAT_occupancy": 0.5,
+    "TBP_TATA_occupancy": 0.5,
+    "pre_mRNA_flux": 3.5414580509189837,
+    "exportable_RNA_flux": 3.027946633535731,
+    "isoforms": [
+      {
+        "mRNA": 3.027946633535731,
+        "translation_flux": 0.14342905106221884,
+        "folded_protein": 0.12908614595599696,
+        "delivered_protein": 0.11617753136039727,
+        "functional_output": 0.11617753136039727
+      }
+    ]
+  },
+  "nuclear_CCAAT_loss": {
+    "NF_Y_CCAAT_occupancy": 0.0,
+    "TBP_TATA_occupancy": 0.5,
+    "pre_mRNA_flux": 2.1480028879685085,
+    "exportable_RNA_flux": 1.8365424692130747,
+    "isoforms": [
+      {
+        "mRNA": 1.8365424692130747,
+        "translation_flux": 0.08699411696272459,
+        "folded_protein": 0.07829470526645213,
+        "delivered_protein": 0.07046523473980693,
+        "functional_output": 0.07046523473980693
+      }
+    ]
+  },
+  "nuclear_transcription_interaction": {
+    "control": 2.8995006170229813,
+    "A": 3.425355246030464,
+    "B": 3.5414580509189837,
+    "AB": 4.183738345180016,
+    "contrast": 0.11642566525354958
+  },
+  "mt_replication_reference": {
+    "fork_capacity": 0.125,
+    "priming_capacity": 0.5,
+    "relative_timing": {
+      "heavy_start": 0,
+      "light_start": 882.0,
+      "complete": 2207.52
+    }
+  },
+  "mt_replication_low_SSBP1": {
+    "fork_capacity": 0.04166666666666667,
+    "priming_capacity": 0.5,
+    "relative_timing": {
+      "heavy_start": 0,
+      "light_start": 2642.0,
+      "complete": 6618.5599999999995
+    }
+  },
+  "mt_reference": {
+    "LSP_primary_output": 29.629629629629623,
+    "HSP_primary_output": 29.629629629629623,
+    "punctuation_efficiency": 0.4444444444444444,
+    "processed_mRNA_proxy": 18.96296296296296,
+    "stop_completion_fraction": 0.8999999999999999,
+    "usable_WT_tRNA": 7.9012345679012315,
+    "usable_variant_tRNA": 0.0,
+    "mt_encoded_subunit_flux": 15.149329634766524,
+    "imported_nuclear_precursors": 53.33333333333332,
+    "folded_nuclear_subunit_proxy": 23.703703703703695,
+    "mt_assembly_ready_subunits": 12.11946370781322,
+    "mixed_complex_capacity_proxy": 12.11946370781322
+  },
+  "mt_high_heteroplasmy": {
+    "LSP_primary_output": 29.629629629629623,
+    "HSP_primary_output": 29.629629629629623,
+    "punctuation_efficiency": 0.4444444444444444,
+    "processed_mRNA_proxy": 18.96296296296296,
+    "stop_completion_fraction": 0.8999999999999999,
+    "usable_WT_tRNA": 1.5802469135802462,
+    "usable_variant_tRNA": 0.47028148148148136,
+    "mt_encoded_subunit_flux": 11.47200749408049,
+    "imported_nuclear_precursors": 53.33333333333332,
+    "folded_nuclear_subunit_proxy": 23.703703703703695,
+    "mt_assembly_ready_subunits": 9.177605995264392,
+    "mixed_complex_capacity_proxy": 9.177605995264392
+  },
+  "mt_low_RNase_P": {
+    "LSP_primary_output": 29.629629629629623,
+    "HSP_primary_output": 29.629629629629623,
+    "punctuation_efficiency": 0.11111111111111112,
+    "processed_mRNA_proxy": 7.111111111111109,
+    "stop_completion_fraction": 0.8999999999999999,
+    "usable_WT_tRNA": 1.9753086419753083,
+    "usable_variant_tRNA": 0.0,
+    "mt_encoded_subunit_flux": 4.248962655601658,
+    "imported_nuclear_precursors": 53.33333333333332,
+    "folded_nuclear_subunit_proxy": 23.703703703703695,
+    "mt_assembly_ready_subunits": 3.3991701244813264,
+    "mixed_complex_capacity_proxy": 3.3991701244813264
+  },
+  "mt_low_HSPA9": {
+    "imported_nuclear_precursors": 13.333333333333332,
+    "folded_nuclear_subunit_proxy": 5.925925925925925,
+    "mt_assembly_ready_subunits": 12.11946370781322,
+    "mixed_complex_capacity_proxy": 5.925925925925925
+  }
+}
