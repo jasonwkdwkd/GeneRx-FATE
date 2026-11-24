@@ -1,6 +1,6 @@
 # Central Dogma Interaction Equation: implemented equations
 
-These equations summarize the dimensionless illustrative models in [compartments.py](compartments.py) and [model.py](model.py). See [Methods](METHODS.md) for assumptions and cited biological evidence.
+These equations summarize the dimensionless illustrative models in [compartments.py](compartments.py) and [model.py](model.py). See [Methods](METHODS.md) for assumptions and biological references, [Data sources](DATA_SOURCES.md) for dataset provenance, and [Reproducibility](REPRODUCIBILITY.md) for the validation protocol.
 
 ## Replication and inheritance
 
@@ -14,7 +14,7 @@ These equations summarize the dimensionless illustrative models in [compartments
 
 - Precursor flux: $J=d A f(\mathrm{PolII})\exp[b_{\rm CCAAT}f(\mathrm{NFY})+b_{\rm TATA}f(\mathrm{TBP})+E C-R]$. Here $d$ is dosage, $A$ accessibility, $b$ indicates an available promoter motif, $E$ enhancer activity, $C$ promoter contact and $R$ repressor drive.
 - Exportable flux: $J_{\rm exp}=J f_{\rm cap}f_{\rm poly(A)}$. The two factors describe effective 5′ capping and 3′ cleavage/polyadenylation.
-- For splice isoform $i$, $M_i=J_{\rm exp}p_i/(\delta_i+\mathbf{1}_{\rm PTC}\delta_{\rm NMD,i})$ and $\sum_i p_i=1$. Frame changes follow the coding-length difference modulo three. A separate heuristic checks premature-stop distance from the last junction. NMD rates are supplied.
+- For splice isoform $i$, $M_i=J_{\rm exp}p_i/(\delta_i+I_i\,\delta_{N,i})$ and $\sum_i p_i=1$. Frame changes follow the coding-length difference modulo three. Here the indicator $I_i$ denotes a premature termination codon and $\delta_{N,i}$ is the user-supplied extra decay rate. A separate heuristic checks premature-stop distance from the last junction.
 - Translation flux is $J_i=M_i\alpha_i/(1+\alpha_i L_i/v_i)$, where effective initiation $\alpha_i$ includes a Kozak factor or a ribosome availability factor depending on the entry point. Delivered folded protein is $P_i=J_i f_{\rm fold,i}f_{\rm delivery,i}/\delta_{\rm protein,i}$, with functional output $P_i a_i$.
 
 ## Mitochondrial transcription, translation and assembly
