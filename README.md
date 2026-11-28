@@ -1,14 +1,14 @@
 <div align="center">
 
-# GeneRx-FATE
+<img src="docs/assets/generx-fate-banner.svg" alt="GeneRx-FATE — Predicting nonadditive genetic interactions from single-perturbation transcriptomics" width="100%" />
 
-**Predicting nonadditive genetic interactions from single-perturbation transcriptomics**
+# GeneRx-FATE
 
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
 ![Research](https://img.shields.io/badge/Research-Computational%20Biology-087E8B)
 [![GEO](https://img.shields.io/badge/GEO-GSE133344-183B56)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133344)
 
-[Overview](#overview) · [Reproduction](#reproduce-the-k562-benchmark) · [Results](#results) · [Data citation](#data-citation)
+[Overview](#overview) · [Reproduction](#reproduce-the-k562-benchmark) · [Results](#results) · [Scope](#scope-and-interpretation) · [Citation](#software-citation)
 
 </div>
 
@@ -42,6 +42,16 @@ flowchart TD
 ```
 
 ## Reproduce the K562 benchmark
+
+For a fresh checkout, clone the repository and create an isolated Python environment before following the benchmark commands below.
+
+```bash
+git clone https://github.com/jasonwkdwkd/GeneRx-FATE.git
+cd GeneRx-FATE
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
 
 Use Python 3.11 or later, a C++ compiler (`g++`), and `gzip`. Install dependencies with `python -m pip install -r requirements.txt`. Then download the following files from the [GSE133344 supplementary directory](https://ftp.ncbi.nlm.nih.gov/geo/series/GSE133nnn/GSE133344/suppl/) into a local directory named `geo`.
 
