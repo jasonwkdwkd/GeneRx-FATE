@@ -71,6 +71,20 @@ The workflow regenerates numerically equivalent pair arrays from GEO. `S_source_
 
 Across 92 held-out pairs and 172 test appearances, the additive-relative R² was 0.33522 for rank-one PCA/ridge and 0.33611 for exploratory direct ridge. Both used the same six features and strict gene-holdout splits. The 200-shuffle rerun reproduced the one-sided Monte Carlo p-value of 0.004975. See [benchmark.json](benchmark.json) for pooled SSE and differences against the archived results. This benchmark uses one CRISPRa dataset. The CDIE simulator illustrates synthetic perturbations, and its public-assay benchmarks evaluate individual projections.
 
+## Scope and interpretation
+
+- The primary benchmark evaluates held-out gene pairs within one K562 CRISPRa dataset; it is not independent external validation.
+- Direct ridge and PCA/ridge use matched features and splits. The reported results do not establish superiority of PCA/ridge.
+- CDIE is exploratory; synthetic simulations and individual public-assay projections should not be interpreted as clinical validation.
+
+## Reproducibility and reporting
+
+Dependencies are version-pinned in [requirements.txt](requirements.txt). Archived results and audit tables are linked above. For a reproducibility question, please report the repository commit, Python version, operating system, command, and observed output via [GitHub Issues](https://github.com/jasonwkdwkd/GeneRx-FATE/issues).
+
+## Software citation
+
+When referencing this software, cite **GeneRx-FATE**, its [repository URL](https://github.com/jasonwkdwkd/GeneRx-FATE), and the specific commit used. Cite the original dataset publication separately. A manuscript DOI should be added only when available.
+
 ## Data citation
 
 Norman TM, Horlbeck MA, Replogle JM, et al. Exploring genetic interaction manifolds constructed from rich single-cell phenotypes. *Science*. 2019;365:786–793. https://doi.org/10.1126/science.aax4438
