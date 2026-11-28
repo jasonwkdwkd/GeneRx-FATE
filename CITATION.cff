@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the repository and the specific commit used."
+title: "GeneRx-FATE"
+type: software
+authors:
+  - name: "GeneRx-FATE contributors"
+repository-code: "https://github.com/jasonwkdwkd/GeneRx-FATE"
+url: "https://github.com/jasonwkdwkd/GeneRx-FATE"
+keywords:
+  - CRISPRa
+  - Perturb-seq
+  - genetic interactions
+  - computational biology
